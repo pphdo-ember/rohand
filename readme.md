@@ -14,7 +14,7 @@ Once you have a Python script, you can build an `.exe` (Windows) or a `.app` (Ma
 ## Building for other machines
 [PyInstaller](https://pypi.org/project/pyinstaller/) creates an executable for the machine it's running on. This means that if you're on Windows and you want to distribute for Mac users, you'll need a Mac machine to run `pyinstaller --clean main.spec` on.
 
-One way to build executables for other machines is use GitHub Actions:
+One way to build executables for other machines is to use GitHub Actions:
 1. Download the `requirements.txt` file.
 1. Create a GitHub repository with your 4 files: `main.py`, `hand_landmarker.task`, `main.spec`, `requirements.txt`.
 2. Go to Actions > New workflow > Set up a workflow yourself. This creates a blank `main.yml` file.
