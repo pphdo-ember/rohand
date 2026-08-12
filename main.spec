@@ -34,7 +34,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='main',
+    name='Rohand',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
