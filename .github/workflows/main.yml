@@ -63,7 +63,7 @@ jobs:
 
       - name: Build macOS application
         run: |
-          pyinstaller --clean --noconfirm --windowed main.spec
+          pyinstaller --clean --noconfirm main.spec
 
       - name: Upload macOS application
         uses: actions/upload-artifact@v4
