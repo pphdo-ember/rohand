@@ -4,9 +4,9 @@ A template to create executables from a Python script that uses [Mediapipe](http
 # Workflow
 
 ## Local
-Once you have a Python script, you can build an `.exe` (Windows) or a `.app` (Mac) file:
+Once you have a Python script, you can build an `.exe` (Windows) or an `.app` (Mac) file:
 1. Create a virtual environment and activate it.
-2. Run: `pip install requirements.txt`
+2. Run: `pip install requirements.txt`.
 3. Download `main.spec` and `hand_landmarker.task`. If you have another model you want to use, open up `main.spec` and change `datas = [('hand_landmarker.task'), '.')]` to use your `.task` model.
 4. Run: `pyinstaller --clean main.spec`. Note that `main.spec` looks for a file named `main.py`; you can change that in the `Analysis` constructor.
 5. Go to `./dist` and double click on the `.exe` or `.app` file there.
